@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import './conversor.css'
 
 export default class Conversor extends Component{
 
@@ -22,8 +22,8 @@ export default class Conversor extends Component{
 
         // console.log(this.state) fazendo relação com o bind!!! desativei o codigo
 
-        let de_para = `${this.props.moedaA}_${this.props.moedaB}`// ativa a parte de converter uma moeda para outra dentro dessa variavel
-        let url = ` http://economia.awesomeapi.com.br/json/last/${de_para}USD-BRL`
+        let de_para = `${this.props.moedaA}_${this.props.moedaB}`;// ativa a parte de converter uma moeda para outra dentro dessa variavel
+        let url = ` https://free.currencyconverterapi.com/api/v5/convert?q=${de_para}&compact=y`
         
         fetch(url) //acessa a URL e pega o dado no site
         .then(res=>{
@@ -44,11 +44,12 @@ export default class Conversor extends Component{
             <div classname="Conversor"> 
                <h2> {this.props.moedaA} para {this.props.moedaB}</h2>
                <input type="text" onChange={(event)=>{this.setState({moedaA_valor:event.target.value})}}></input> 
-               <button type="button" onClick = {this.converter}>Converter</button>
-               <h2> {this.state.moedaB_valor}</h2>
+               <input type="button" value="Converter" onClick={this.converter}></input>
+               
+               <h2> {this.state.moedaB_valor}</h2> 
 
-                
+                               
             </div>
-            )   
+            )   //alterar dps a linnha para button type por causa dos comentarios / antes disso era button type="button" onClick = {this.converter}>Converter</button>
         }   
     }
