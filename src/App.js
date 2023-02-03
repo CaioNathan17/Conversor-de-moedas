@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+//import React, { Component } from "react";
 import './logo.svg';
 import './App.css';
 
-import Conversor from "./components/conversor"
+import Conversor from "./components/conversor";
 
 
-  class App extends Component{
-    render() {
+
+    function App() {
       return (
         <div className="App">
           <h1> Conversor de Moedas</h1>
@@ -26,7 +26,7 @@ import Conversor from "./components/conversor"
         </div>
 
       );
-    }
+    
   }
 
 
