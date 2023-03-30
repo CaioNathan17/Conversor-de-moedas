@@ -26,7 +26,7 @@ export default class Conversor extends Component{
         //console.log(this.state);  // esquece, faz parte da ultima codificação que eu fiz
 
         let de_para = `${this.props.moedaA}_${this.props.moedaB}`; //ativa a parte de converter uma moeda para outra dentro dessa variavel        
-        let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=c90f2ee33460e7a2dffb`;
+        let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=56452f5f3464de631eb9`;
         
         
         fetch(url) //acessa a URL e pega o dado no site
