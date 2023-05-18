@@ -1,14 +1,74 @@
-.linha{
+.linha1{
     display: flex;
     margin-top: 40px;
     justify-content: space-around;
-    
-    }
+    float: right;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px;
+}
+
+.linha2{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    float: left;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px;
+}
+
+.linha3{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    float: left;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px;
+}
+
+.linha4{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    float: right;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px;
+}
+
+.linha5{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    float: left;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px;
+}
+
+.linha6{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    float: right;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px;
+}
+
 
 h1{
     text-align: center;
     transition: .4s;
-    
+
 }
 
 .App{
